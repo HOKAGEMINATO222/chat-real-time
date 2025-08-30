@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
-    {
-        email: { type: String, required: true, unique: true },
-        name: { type: String, required: true },
-        image: { type: String },
-        clearkId: { type: String, required: true, unique: true },
-    },
-    { timestamps: true }
+  {
+    email: { type: String, required: true, unique: true },
+    name: { type: String, required: true },
+    image: { type: String },
+    clearkId: { type: String, required: true, unique: true },
+  },
+  { timestamps: true }
 );
 
-export const User = mongoose.model("UserChatRealTime", userSchema);
+export const User = mongoose.model("User", userSchema);
